@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+<p>
+	<!-- may give names for first/last name -->
+	<!-- name could be used to see which data will be sent -->
+	<!-- paragraph could also be div -->
+	<label for = "First Name">First Name:</label>
+	<input id = "First Name" type = "text" placeholder="John" required>
+	<label for = "Last Name">Last Name:</label>
+	<input id = "Last Name" type = "text" placeholder="Smith" required>
+</p>
+<p>
+	<label for = "Male">Male</label>
+	<input name = "Gender" id = "Male" type = "radio" value = "MALE">
+	<label for = "Female">Female</label>
+	<input name = "Gender" id = "Female" type = "radio" value = "FEMALE">
+	<label for = "Other">Other</label>
+	<input name = "Gender" id = "Other" type = "radio" value = "OTHER">
+</p>
+<p>
+	<!-- nested label
+	<label>
+		Email:
+		<input id = "Email" type = "email" placeholder = "your email" required>
+	</label>
+	 -->
+	<label for = "Email">Email:</label>
+	<input id = "Email" type = "email" placeholder = "your email" required>
+	<label for = "Password">Password:</label>
+	<input id = "Password" minlength = 5 maxlength = 10 type = "password" placeholder = "your password">
+</p>
+<p>
+	<label for = "birthday">Birthday:</label>
+	<select name = "month">
+		<option>Month</option>
+		<option>January</option>
+		<option>Feburary</option>
+		<option>March</option>
+	</select>
+	<select name = "day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<select name = "year">
+		<option>Year</option>
+		<option>2020</option>
+		<option>2019</option>
+		<option>2018</option>
+	</select>
+</p>
+<p>	
+	<label for = "agreement">I agree to the terms and conditions</label>
+	<input id = "agreement" name = "agreement" type = "checkbox">
+</p>
+<p>	
+	<input type = "submit">
+</p>
+</form>	
+</body>
+</html>

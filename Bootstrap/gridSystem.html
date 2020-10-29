@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid System</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+	.pink{
+		background:pink;
+		border:1px solid purple;
+	}
+	.orange{
+		background:orange;
+		border:1px dashed purple;
+		height:50px;
+	}
+	</style>
+</head>
+<body>
+<!--  grid system that appropriately scales up to 12 columns as the device or viewport size increases -->
+<div class="container">
+	<!-- <div class="row"> -->
+		<!-- total col number = 12 -->
+		<!-- <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 pink">COL LG 1</div> -->
+	<!-- </div> --> 
+
+	<!-- sublime know exactly lg-3 is fine b/c md-3 -->
+	<div class="row">
+		<div class="col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-lg-6 orange">FIRST HALFWAY</div>
+				<div class="col-lg-6 orange">OTHER HALF</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 pink">Tour Date!</div>
+		<div class="col-md-3 col-sm-6 pink">Tour Date!</div>
+		<div class="col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
